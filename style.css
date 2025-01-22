@@ -1,0 +1,260 @@
+:root {
+  --base-font-size: 16px;
+}
+
+@media (max-width: 805px) {
+  :root {
+    --base-font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --base-font-size: 10px;
+  }
+}
+
+body {
+  margin: 0%;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.slide {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.center-x {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.big-padding {
+  box-sizing: border-box;
+  padding: 4vw;
+}
+
+.bigger-padding {
+  box-sizing: border-box;
+  padding: 8vw;
+}
+
+.btn {
+  border-radius: 30px;
+  border-width: 0%;
+  background-color: #5f60ff;
+  font-size: var(--base-font-size);
+  color: azure;
+  height: 5vh;
+  padding: 0.5vw;
+}
+
+.mini-caption {
+  color: #5f60ff;
+  font-size: var(--base-font-size);
+  font-weight: 700;
+}
+
+.center-img {
+  margin: auto;
+  display: block;
+}
+
+.text-content {
+  font-size: calc(var(--base-font-size) * 1.75);
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* slide 1 */
+.leading-slide {
+  background-image: url(images/title-background.jpg);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  color: azure;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 20%;
+  box-sizing: border-box;
+  font-size: calc(var(--base-font-size) * 2);
+  padding-top: 2vh;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0%;
+  margin: 0px;
+  flex-shrink: 1;
+  padding: 5px 30px;
+}
+
+.navigation > * {
+  margin-top: 0px;
+  flex-shrink: 1;
+}
+
+.underlined {
+  text-decoration: underline;
+  text-decoration-color: #5f60ff;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
+
+.logo::before {
+  content: "@ ";
+  color: #5f60ff;
+}
+
+.select-minimal::after {
+  content: "⮹";
+  color: #898989;
+  font-size: calc(var(--base-font-size) * 1.5);
+  transform: rotate(180deg) translateY(-7px);
+  position: absolute;
+}
+
+.main-text {
+  color: rgb(238, 245, 245);
+  font-size: calc(var(--base-font-size) * 5);
+  font-weight: bold;
+  margin: 8vw 27vw 0.5vw 3vw;
+}
+
+.shift-right {
+  margin: 3vw;
+}
+
+/* slide 2 */
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 15px;
+}
+
+.card {
+  border: 1px solid #898989;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin: 3px;
+  padding: 15px;
+}
+
+.card > .center-img {
+  height: 10vh;
+  width: auto;
+}
+
+.card > .c-capt {
+  margin: auto;
+  display: block;
+  font-size: calc(var(--base-font-size) * 1.6);
+}
+
+.card > .card-text {
+  margin: auto;
+  display: block;
+  font-size: calc(var(--base-font-size) * 1);
+  color: #898989;
+}
+
+.capt-container {
+  margin-top: 15vh;
+  margin-bottom: 0px;
+  padding: 0%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.caption {
+  font-size: calc(var(--base-font-size) * 3);
+}
+
+.caption-right-margin {
+  margin: 0% 25% 1%;
+}
+
+/* slide 3 */
+.dark {
+  background-color: #272727;
+  color: #d5d5d5;
+}
+
+.white-text {
+  color: #d5d5d5 !important;
+}
+
+.half-width-img {
+  width: 50vw;
+  height: auto;
+  display: block;
+}
+
+.solid-row {
+  padding: 0%;
+  display: flex;
+}
+
+.solid-row > * {
+  flex: 1 1 auto;
+}
+
+/* slide 4 */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 16px;
+}
+
+.first-item {
+  grid-column: span 2;
+}
+
+.item {
+  background-color: lightgray;
+  /* height: 100vh; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.hint-text {
+  color: #898989;
+  font-size: var(--base-font-size);
+}
+
+/* slide 5 */
+.circle {
+  border-radius: 50%;
+  width: calc(var(--base-font-size) * 2.5);
+  height: calc(var(--base-font-size) * 2.5);
+}
+
+.smaller-text {
+  font-size: calc(var(--base-font-size) * 1.25);
+}
